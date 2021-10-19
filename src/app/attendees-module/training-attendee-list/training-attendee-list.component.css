@@ -1,0 +1,31 @@
+.button-class{
+    width: 200px;
+    background: #2196F3;
+    color: #ffffff;
+    border: 1px solid #2196F3;
+    margin: 0;
+    outline: 0 none;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    margin:10px;
+}
+.container{
+    width:100%;
+    display: flex;
+}
+.first{
+    width: 50%
+}
+.second{
+    width:50%
+}
+.label-class{
+    font-size: larger;
+    font-weight: bold;
+}
+.href-class{
+    padding-top: 10px;
+}

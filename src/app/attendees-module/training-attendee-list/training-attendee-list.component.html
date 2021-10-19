@@ -1,0 +1,74 @@
+
+<app-button-component [buttonText]="'Attendees List'" (displayNamePressed)="displayNames($event)"></app-button-component>
+
+<button class="button-class"
+  (click)="getCount()" 
+  [style.color]="fontColor"
+>Get Count</button>
+
+<!-- <label class="label-class">Angular masterminds - Linkedin&nbsp;</label> -->
+   
+<!-- <a href="https://www.linkedin.com/groups/8255394/" target="_blank" rel="noopener">
+  <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+</a> -->
+<!-- <a href="https://www.linkedin.com/groups/4896676/" target="_blank" rel="noopener">
+  <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+</a> -->
+
+
+<div *ngIf="visible" class="container">
+    <div class="first">
+        <p style="font-size: large;">Harshad Amrutkar</p><br>
+        <p style="font-size: large;">Kailesh Ashtekar</p><br>
+        <p style="font-size: large;">Vijay Balkawade </p><br>
+        <p style="font-size: large;">Rinkesh Chaudhari </p><br>
+        <p style="font-size: large;">Vishal Daundkar</p><br>
+        <p style="font-size: large;">Vaibhav Dhokale  </p><br>
+        <p style="font-size: large;">Shraddha Firodiya </p><br>
+        <p style="font-size: large;">Komal Gangurde </p><br>
+        <p style="font-size: large;">Ruchika Ghavghave </p><br>
+        <p style="font-size: large;">Aniruddh Gujar </p><br>
+        <p style="font-size: large;">Triveni Hassanandani</p><br>
+        <p style="font-size: large;">Ramesh Hingane </p><br>
+        <p style="font-size: large;">Gitanjali Hinge</p><br>
+        <p style="font-size: large;">Javeed K </p><br>
+        <p style="font-size: large;">Sameer Jadhav</p><br>
+        <p style="font-size: large;">Saurabh Junankar</p><br>
+        <p style="font-size: large;">Vasanti Kaiche</p><br>
+        <p style="font-size: large;">Trupti Kalani </p><br>
+        <p style="font-size: large;">Virendra Kamble </p><br>
+        <p style="font-size: large;">Priyanka Khadse</p><br>
+        <p style="font-size: large;">Sudarshan Khilari </p><br>
+        <p style="font-size: large;">Tejaswini Kshirsagar</p><br>
+        <p style="font-size: large;">Baleswar Manapadu</p><br>
+        <p style="font-size: large;">Sanskruti Morade </p><br>
+        <p style="font-size: large;">Sandeep Mule</p><br>
+    </div>
+    <div class="second">
+        <p style="font-size: large;">Upendra Nagmallewar</p><br>
+        <p style="font-size: large;">Ganesh Nikam </p><br>
+        <p style="font-size: large;">Pradeep Pandit </p><br>
+        <p style="font-size: large;">Sonal C Patil </p><br>
+        <p style="font-size: large;">Akshay Porwal </p><br>
+        <p style="font-size: large;">Rushikesh Puri</p><br>
+        <p style="font-size: large;">Annushri Samdani </p><br>
+        <p style="font-size: large;">Priti Sawant</p><br>
+        <p style="font-size: large;">Jinesh Shah </p><br>
+        <p style="font-size: large;">Azruddin Shaikh </p><br>
+        <p style="font-size: large;">Kavya Shetty </p><br>
+        <p style="font-size: large;">Sheetal Soni </p><br>
+        <p style="font-size: large;">Tanmay Takawale</p><br>
+        <p style="font-size: large;">Shubham Wattamwar </p><br>
+        <p style="font-size: large;">Sandeep Yelekar </p><br>
+        <p style="font-size: large;">Pavithra Karantha</p><br>
+        <p style="font-size: large;">Harikrishna Patnaik </p><br>
+        <p style="font-size: large;">Sivamanikandan Velraj </p><br>
+        <p style="font-size: large;">Sameer Garg </p><br>
+        <p style="font-size: large;">Mamatha Seenappa </p><br>
+        <p style="font-size: large;">Sidharth Raj </p><br>
+        <p style="font-size: large;">Poorvika Gurubasavaraj </p><br>
+        <p style="font-size: large;">Namratha Hipparagi</p><br>
+        <p style="font-size: large;">Prashanthkumar Munegowda </p><br>
+        <p style="font-size: large;">Siva Raman</p><br>
+    </div>
+</div>
