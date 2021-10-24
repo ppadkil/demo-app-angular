@@ -1,9 +1,13 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button-component',
   templateUrl: './button-component.component.html',
   styleUrls: ['./button-component.component.css'],
+  // Use Change detection strategy as OnPush to avoid refreshing the whole page.
+  // By defaults the change detection strategy is Default
+  // To improve performance use change detection strategy as OnPush for components
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponentComponent implements OnInit {
 
