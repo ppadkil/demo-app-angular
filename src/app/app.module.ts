@@ -26,7 +26,7 @@ import { RoutingComponentComponent } from './routing-component/routing-component
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [], // ny service that you want at root level. Like any ErrorLoggerService for example
   bootstrap: [AppComponent]
 })
 export class AppModule { }
