@@ -19,9 +19,6 @@ const routes: Routes = [
           module => module.LazyModule
         )
       },
-    // loadChildren: () => import(`./blog/blog.module`).then(
-    //     module => module.BlogModule
-    //   )
     {path: 'lazy', loadChildren: '../lazy/lazy.module#LazyModule'},
     {path: '**', component: PagenotfoundComponent}
 ];

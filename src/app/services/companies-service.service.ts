@@ -23,6 +23,7 @@ export class CompaniesService {
 
   constructor() {}
   public getCompanies(): any {
+    // returning Observables
     let companiesObservable = new Observable(observer => {
         setTimeout(() => {
             observer.next(this.companies);

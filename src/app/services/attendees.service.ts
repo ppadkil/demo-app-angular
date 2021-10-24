@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-// Will use this with service call example
+// We can use HttpClient module's get, post, put method when giving actual api calls and dealing with json
 // import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' // used root so that the service is available globally 
 })
 export class AttendeesService {
 

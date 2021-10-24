@@ -37,15 +37,13 @@ AfterContentInit, AfterViewInit, AfterContentInit, AfterContentChecked {
     alert('Count is ' + count);
   }
 
+  // Angular Lifecycle event of a component
   ngOnInit(): void {
     // Used for: 
     // To perform complex initializations shortly after construction.
      console.log("AppComponent: OnInit");
 
   }
-
-
-  // Angular Lifecycle event of a component
 
   ngOnChanges() {
      // Used for: 
@@ -54,21 +52,22 @@ AfterContentInit, AfterViewInit, AfterContentInit, AfterContentChecked {
   }
 
   // ngDoCheck() {
+  // to handle change detection that angular does not detect
   //   console.log("AppComponent: DoCheck");
   // }
 
+  // hooks that Angular calls after Angular projects external content into the component
   ngAfterContentInit() {
-    // hooks that Angular calls after Angular projects external content into the component
     console.log("AppComponent: AfterContentInit");
   }
 
   ngAfterContentChecked() {
-  console.log("AppComponent:AfterContentChecked");
+    console.log("AppComponent:AfterContentChecked");
   }
 
-  ngAfterViewInit() {
   // hooks that Angular calls after it creates a component's child views. 
-  console.log("AppComponent:AfterViewInit");
+  ngAfterViewInit() {
+    console.log("AppComponent:AfterViewInit");
   }
 
   ngAfterViewChecked() {
