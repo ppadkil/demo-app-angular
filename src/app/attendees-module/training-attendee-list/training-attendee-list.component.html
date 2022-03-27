@@ -6,60 +6,41 @@
   [style.color]="fontColor"
 >Get Count</button>
 
+<!-- <mat-checkbox></mat-checkbox> -->
+<p highlight>today is {{ today | date | lowercase }}</p>
+<!-- {{ birthday | date | uppercase}} -->
 <!--This template is just a dumy template. Actual html templates should not have <br> tags-->
 <div *ngIf="visible" class="container">
     <div class="first">
-        <p style="font-size: large;">Harshad Amrutkar</p><br>
-        <p style="font-size: large;">Kailesh Ashtekar</p><br>
-        <p style="font-size: large;">Vijay Balkawade </p><br>
-        <p style="font-size: large;">Rinkesh Chaudhari </p><br>
-        <p style="font-size: large;">Vishal Daundkar</p><br>
-        <p style="font-size: large;">Vaibhav Dhokale  </p><br>
-        <p style="font-size: large;">Shraddha Firodiya </p><br>
-        <p style="font-size: large;">Komal Gangurde </p><br>
-        <p style="font-size: large;">Ruchika Ghavghave </p><br>
-        <p style="font-size: large;">Aniruddh Gujar </p><br>
-        <p style="font-size: large;">Triveni Hassanandani</p><br>
-        <p style="font-size: large;">Ramesh Hingane </p><br>
-        <p style="font-size: large;">Gitanjali Hinge</p><br>
-        <p style="font-size: large;">Javeed K </p><br>
-        <p style="font-size: large;">Sameer Jadhav</p><br>
-        <p style="font-size: large;">Saurabh Junankar</p><br>
-        <p style="font-size: large;">Vasanti Kaiche</p><br>
-        <p style="font-size: large;">Trupti Kalani </p><br>
-        <p style="font-size: large;">Virendra Kamble </p><br>
-        <p style="font-size: large;">Priyanka Khadse</p><br>
-        <p style="font-size: large;">Sudarshan Khilari </p><br>
-        <p style="font-size: large;">Tejaswini Kshirsagar</p><br>
-        <p style="font-size: large;">Baleswar Manapadu</p><br>
-        <p style="font-size: large;">Sanskruti Morade </p><br>
-        <p style="font-size: large;">Sandeep Mule</p><br>
-    </div>
-    <div class="second">
-        <p style="font-size: large;">Upendra Nagmallewar</p><br>
-        <p style="font-size: large;">Ganesh Nikam </p><br>
-        <p style="font-size: large;">Pradeep Pandit </p><br>
-        <p style="font-size: large;">Sonal C Patil </p><br>
-        <p style="font-size: large;">Akshay Porwal </p><br>
-        <p style="font-size: large;">Rushikesh Puri</p><br>
-        <p style="font-size: large;">Annushri Samdani </p><br>
-        <p style="font-size: large;">Priti Sawant</p><br>
-        <p style="font-size: large;">Jinesh Shah </p><br>
-        <p style="font-size: large;">Azruddin Shaikh </p><br>
-        <p style="font-size: large;">Kavya Shetty </p><br>
-        <p style="font-size: large;">Sheetal Soni </p><br>
-        <p style="font-size: large;">Tanmay Takawale</p><br>
-        <p style="font-size: large;">Shubham Wattamwar </p><br>
-        <p style="font-size: large;">Sandeep Yelekar </p><br>
-        <p style="font-size: large;">Pavithra Karantha</p><br>
-        <p style="font-size: large;">Harikrishna Patnaik </p><br>
-        <p style="font-size: large;">Sivamanikandan Velraj </p><br>
-        <p style="font-size: large;">Sameer Garg </p><br>
-        <p style="font-size: large;">Mamatha Seenappa </p><br>
-        <p style="font-size: large;">Sidharth Raj </p><br>
-        <p style="font-size: large;">Poorvika Gurubasavaraj </p><br>
-        <p style="font-size: large;">Namratha Hipparagi</p><br>
-        <p style="font-size: large;">Prashanthkumar Munegowda </p><br>
-        <p style="font-size: large;">Siva Raman</p><br>
+        <p style="font-size: large;">Shubham Adhane</p><br>
+        <p style="font-size: large;">Shweta Agrawal</p><br>
+        <p style="font-size: large;">Mohini Andhare </p><br>
+        <p style="font-size: large;">Pravin Awate </p><br>
+        <p style="font-size: large;">Shivani Bavage</p><br>
+        <p style="font-size: large;">Gaurav A Chaudhari</p><br>
+        <p style="font-size: large;">Rinkesh Chaudhari</p><br>
+        <p style="font-size: large;">Hema D</p><br>
+        <p style="font-size: large;">Rahul Darekar </p><br>
+        <p style="font-size: large;">Chinmay Date</p><br>
+        <p style="font-size: large;">Rohit Dhage</p><br>
+        <p style="font-size: large;">Kuldip Gadekar </p><br>
+        <p style="font-size: large;">Aishwarya Gogate</p><br>
+        <p style="font-size: large;">Ameya Jatkar </p><br>
+        <p style="font-size: large;">Vaibhavi Joshi</p><br>
+        <p style="font-size: large;">Gauri Kale</p><br>
+        <p style="font-size: large;">Shivangi Karpe</p><br>
+        <p style="font-size: large;">Harshit Khanna </p><br>
+        <p style="font-size: large;">Suraj Mali </p><br>
+        <p style="font-size: large;">Munir Nadaf</p><br>
+        <p style="font-size: large;">Shridhar NLN </p><br>
+        <p style="font-size: large;">Harshad Pawar</p><br>
+        <p style="font-size: large;">Prakash Pawar</p><br>
+        <p style="font-size: large;">Nanasaheb Shelake </p><br>
+        <p style="font-size: large;">Avdhut Sinkar</p><br>
+        <p style="font-size: large;">Rupali Suravase</p><br>
+        <p style="font-size: large;">Dhanashri Tambe</p><br>
+        <p style="font-size: large;">Mukund Tonge</p><br>
+        <p style="font-size: large;">Anagha Umathe</p><br>
+        <p style="font-size: large;">Kaustubh Wagh</p><br>
     </div>
 </div>

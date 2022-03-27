@@ -9,7 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { RoutingComponentComponent } from './routing-component/routing-component.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+// Add note: How to add angular material component..
 
 
 @NgModule({
@@ -25,6 +27,12 @@ import { RoutingComponentComponent } from './routing-component/routing-component
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule
+    
+  ],
+  exports: [
+    MatCheckboxModule 
   ],
   providers: [], // any service that you want at root level. Like any ErrorLoggerService for example
   bootstrap: [AppComponent]

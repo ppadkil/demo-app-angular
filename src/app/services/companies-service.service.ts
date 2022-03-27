@@ -26,8 +26,8 @@ export class CompaniesService {
     // returning Observables
     let companiesObservable = new Observable(observer => {
         setTimeout(() => {
-            observer.next(this.companies);
-            let filterResult = this.companies.filter((company) => company.name !== 'Paypal');
+            observer.next(this.companies.filter((company) => company.name !== 'Paypal'));
+            // let filterResult = this.companies.filter((company) => company.name !== 'Paypal');
         }, 1000);
     });
 

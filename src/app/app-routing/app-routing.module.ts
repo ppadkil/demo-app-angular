@@ -19,7 +19,7 @@ const routes: Routes = [
           module => module.LazyModule
         )
       },
-    {path: 'lazy', loadChildren: '../lazy/lazy.module#LazyModule'},
+    // {path: 'lazy', loadChildren: '../lazy/lazy.module#LazyModule'},
     {path: '**', component: PagenotfoundComponent}
 ];
 

@@ -5,7 +5,7 @@ import { AttendeesService } from 'src/app/services/attendees.service';
 @Component({
   selector: 'app-training-attendee-list',
   templateUrl: './training-attendee-list.component.html',
-  styleUrls: ['./training-attendee-list.component.css']
+  styleUrls: ['./training-attendee-list.component.css'],
 })
 export class TrainingAttendeeListComponent implements OnInit, OnDestroy, OnChanges, 
 AfterContentInit, AfterViewInit, AfterContentInit, AfterContentChecked {
@@ -13,6 +13,8 @@ AfterContentInit, AfterViewInit, AfterContentInit, AfterContentChecked {
   buttonText = 'Display Names';
   fontColor = 'yellow';
   visible = false;
+  today = new Date(2022, 2, 22); 
+
   
   constructor(private attendeeService: AttendeesService) { 
     console.log("AppComponent: Constructor");
@@ -77,6 +79,7 @@ AfterContentInit, AfterViewInit, AfterContentInit, AfterContentChecked {
   ngOnDestroy() {
     // Used for 
     // Unsubscribeing from events, timers, service instances. 
+    // this.attendeeService = undefined;
     console.log("AppComponent:OnDestroy");
   }
 
